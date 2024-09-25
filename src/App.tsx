@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
 import Html5QrcodePlugin from './Html5QrcodePlugin'
+import ZxingScanner from './ZxingScanner';
 
 function App() {
   const [result, setResult] = useState();
@@ -22,6 +23,9 @@ function App() {
       <p>
         {result}
       </p>
+
+      <p>Zxing Scanner</p>
+      <ZxingScanner />
     </div>
   )
 }
